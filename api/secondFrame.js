@@ -5,6 +5,8 @@ export default function handler(req, res) {
   
     // Construct the dynamic target URL based on the token ID
     const targetUrl = `https://opensea.io/assets/base/0x13dc8261fce63499aa25deb512bb1827b411b83b/${tokenId}`;
+    // const imageUrl = "https://cloudflare-ipfs.com/ipfs/Qmc3zYWXxeTSNwkcMPMVAu1WQemm3tu3fNkm7hfTKrLGh7/"+tokenId+".png";
+    let imageUrl = "https://cloudflare-ipfs.com/ipfs/Qmc3zYWXxeTSNwkcMPMVAu1WQemm3tu3fNkm7hfTKrLGh7/5638.png"
   
     // Generate the HTML content with the dynamic target URL
     const htmlContent = `
@@ -13,7 +15,7 @@ export default function handler(req, res) {
           <head>
               <title>Dynamic Frame</title>
               <meta property="fc:frame" content="vNext" />
-              <meta property="fc:frame:image" content="https://gateway.ipfs.io/ipfs/Qmc3zYWXxeTSNwkcMPMVAu1WQemm3tu3fNkm7hfTKrLGh7/${tokenId}.png" />
+              <meta property="fc:frame:image" content="${imageUrl}" />
               <meta property="fc:frame:image:aspect_ratio" content="1:1" />
               <meta property="fc:frame:button:1" content="View on OpenSea" />
               <meta property="fc:frame:button:1:action" content="link" />
