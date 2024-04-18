@@ -2,7 +2,7 @@
 export default function handler(req, res) {
     const { tokenId } = req.query;
 
-    const targetUrl = `https://swatchesbotframe.vercel.app/api/frame2?tokenId=${tokenId}`
+    const targetUrl = `https://swatchesbotframe.vercel.app/api/secondFrame?tokenId=${tokenId}`
   
     // Generate the HTML content with the dynamic target URL
     const htmlContent = `

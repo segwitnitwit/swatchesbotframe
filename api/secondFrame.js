@@ -13,7 +13,7 @@ export default function handler(req, res) {
           <head>
               <title>Dynamic Frame</title>
               <meta property="fc:frame" content="vNext" />
-              <meta property="fc:frame:image" content="https://ipfs.io/ipfs/Qmc3zYWXxeTSNwkcMPMVAu1WQemm3tu3fNkm7hfTKrLGh7/${tokenId}.png" />
+              <meta property="fc:frame:image" content="https://gateway.ipfs.io/ipfs/Qmc3zYWXxeTSNwkcMPMVAu1WQemm3tu3fNkm7hfTKrLGh7/${tokenId}.png" />
               <meta property="fc:frame:image:aspect_ratio" content="1:1" />
               <meta property="fc:frame:button:1" content="View on OpenSea" />
               <meta property="fc:frame:button:1:action" content="link" />
